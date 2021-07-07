@@ -3,7 +3,7 @@ from DNA_project.load import Load
 from DNA_project.new import New
 
 
-class CreatorCommand:
+class Factory:
     def __init__(self):
         """Factory Method"""
         self.commands = {
@@ -13,4 +13,5 @@ class CreatorCommand:
         }
 
     def execute_command(self, command):
-        return self.commands[command]()
+        command_list = command.split(' ')
+        return self.commands[command_list[0]](command_list[1:])
