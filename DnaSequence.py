@@ -1,7 +1,13 @@
+import re
+
+
 class DnaSequence:
 
     def __init__(self, string):
-        self.string = string
+        if bool(re.match('^[ACTG]+$', string)):
+            self.string = string
+        else:
+            raise Exception("invalid string! the string must contain only the letters: A,C,T,G")
 
     def insert(self, value, index):
         self.string = self.string[0:index] + value + self.string[index:]
