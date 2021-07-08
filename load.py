@@ -13,4 +13,5 @@ class Load:
             seq_name = file_name.split('.')[0]
         with open('seq_files/'+file_name) as file:
             seq = file.read()
-            New([seq, seq_name])
+            print(seq)
+            New([seq, '@'+seq_name])
