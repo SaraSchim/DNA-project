@@ -31,7 +31,7 @@ class DnaSequence:
             self.__dna = other.__dna
 
     def __str__(self):
-        return self.__dna
+        return "[" + str(self.__id) + "] " + self.__name + ": " + self.__dna
 
     def __eq__(self, other):
         return self.__dna == other.__dna
@@ -44,4 +44,3 @@ class DnaSequence:
 
     def __len__(self):
         return len(self.__dna)
-

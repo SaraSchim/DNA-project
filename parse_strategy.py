@@ -1,7 +1,3 @@
-from DNA_project.database import DataBase
-from DNA_project.find_new_name import orig_name_or_new
-
-
 class Parse:
     def __init__(self, command, parse_strategy):
         self.command = command
@@ -22,7 +18,6 @@ def creation_parse(command_to_parse):
     return command_list
 
 
-# TODO external function tof the : @@|@name part
 def manipulation_parse(command_to_parse):
     fixed_command = " ".join(command_to_parse.command.split())
     command_list = fixed_command.split(' ')
@@ -32,5 +27,13 @@ def manipulation_parse(command_to_parse):
         else:
             command_list.append(None)
     except IndexError:
+        raise Exception("invalid number of arguments")
+    return command_list
+
+
+def management_parse(command_to_parse):
+    fixed_command = " ".join(command_to_parse.command.split())
+    command_list = fixed_command.split(' ')
+    if len(command_list) < 2 or len(command_list) > 3:
         raise Exception("invalid number of arguments")
     return command_list

@@ -1,4 +1,4 @@
-from DNA_project.new import New
+from DNA_project.creation_commands.new import New
 
 
 class Load:

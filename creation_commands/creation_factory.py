@@ -1,7 +1,7 @@
 from DNA_project.creation_commands.dup import Dup
 from DNA_project.creation_commands.load import Load
 from DNA_project.creation_commands.new import New
-from DNA_project.parse import creation_parse, Parse
+from DNA_project.parse_strategy import creation_parse, Parse
 
 
 class Creation:
