@@ -1,11 +1,8 @@
-from DNA_project.factory import Factory
+from DNA_project.cli.cmd import Cmd
 
 
 def main():
-    factory = Factory()
-    while True:
-        command = input("> cmd >>> ")
-        factory.execute_command(command)
+    Cmd()
 
 
 if __name__ == '__main__':

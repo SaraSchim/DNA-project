@@ -1,16 +1,17 @@
 class DataBase(object):
     __instance = None
+
     seq_DB_by_id = dict()
     seq_DB_by_name = dict()
+    batch_commands = dict()
 
     def __new__(cls, *args, **kwargs):
         if not DataBase.__instance:
             DataBase.__instance = object.__new__(cls)
         return DataBase.__instance
 
-    # def __init__(self):
-        # self.seq_DB_by_id = dict()
-        # self.seq_DB_by_name = dict()
+    def __init__(self):
+        pass
 
     def add_seq(self, seq_id, name, seq):
         DataBase.seq_DB_by_id.update({seq_id: (name, seq)})
@@ -80,4 +81,14 @@ class DataBase(object):
         else:
             raise Exception("sequence does not exist")
 
+    def update_command(self, batch_name, command_list):
+        DataBase.batch_commands[batch_name] = command_list
 
+    def get_batch_names(self):
+        return list(DataBase.batch_commands.keys())
+
+    def get_batch_content(self, batch_name):
+        res = DataBase.batch_commands.get(batch_name)
+        if res:
+            return res
+        raise Exception("batch does not exist")

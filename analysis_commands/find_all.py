@@ -1,7 +1,5 @@
 import re
 
-from DNA_project.database import DataBase
-
 
 class FindAll:
 

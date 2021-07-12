@@ -15,7 +15,7 @@ class Delete:
 
     def execute(self):
         confirm = input("Do you realy want to delete {}: {}?\nPlease confirm by 'Y' or 'y', or cancel by 'N' or "
-                        "'n'.\n> confirm >> ")
+                        "'n'.\n> confirm >> ".format(self.seq_name, self.seq))
         while confirm.lower() not in ['y', 'n']:
             confirm = input("You have typed an invalid response. Please either confirm by 'Y'/'y', or cancel by "
                             "'N'/'n'.\n > confirm >> ")
