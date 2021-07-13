@@ -3,6 +3,7 @@ from DNA_project.database import DataBase
 from DNA_project.find_new_name import find_new_name
 
 
+# concats sequences into the first seq or a new seq
 class Concat:
     database = DataBase()
 

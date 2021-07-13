@@ -1,6 +1,7 @@
 from DNA_project.database import DataBase
 
 
+# deletes the seq from the DB
 class Delete:
     database = DataBase()
 

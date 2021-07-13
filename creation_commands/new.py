@@ -3,11 +3,11 @@ from DNA_project.database import DataBase
 from DNA_project.find_new_name import find_new_name
 
 
+# creates a new sequence and saves it in the database
 class New:
-    __num = 1
     database = DataBase()
 
-    # data = [<sequence> [@<sequence_name>]]
+    # data = [<sequence>, [@<sequence_name>]]
     def __init__(self, data):
         self.seq = data[0]
         try:

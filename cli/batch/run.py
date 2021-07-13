@@ -2,6 +2,7 @@ from DNA_project.cli.factory import Factory
 from DNA_project.database import DataBase
 
 
+# executes the batch's commands one after the other
 class Run:
     database = DataBase()
 

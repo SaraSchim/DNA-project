@@ -1,6 +1,7 @@
 import re
 
 
+# finds all the indices where the sub-sequence appears.
 class FindAll:
 
     # data = [<seq_to_find_in>, <seq_to_be_found>]

@@ -1,6 +1,7 @@
 from DNA_project.database import DataBase
 
 
+# shows a list of all the batch names
 class BatchList:
     database = DataBase()
 

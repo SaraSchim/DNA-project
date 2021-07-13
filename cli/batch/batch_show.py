@@ -1,6 +1,7 @@
 from DNA_project.database import DataBase
 
 
+#  shows the content of that batch
 class BatchShow:
     database = DataBase()
 

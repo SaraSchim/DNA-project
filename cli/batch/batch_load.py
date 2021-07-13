@@ -1,6 +1,7 @@
 from DNA_project.database import DataBase
 
 
+# loads a list of commands from a file and saves it as a batch in the DB
 class BatchLoad:
     database = DataBase()
 

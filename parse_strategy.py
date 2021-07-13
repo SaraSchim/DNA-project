@@ -1,6 +1,8 @@
 from DNA_project.database import DataBase
 
 
+# this class is a strategy class that gets a parse function according to the command that creates it
+# parses the command according to the type of the command
 class Parse:
     def __init__(self, command, parse_strategy):
         self.command = command
@@ -11,6 +13,9 @@ class Parse:
         self.command_list = self.parse_strategy(self)
 
 
+# each of the following functions parses a different type of commands with its specific rules:
+
+# parse function for the creation commands
 def creation_parse(command_to_parse):
     fixed_command = " ".join(command_to_parse.command.split())
     command_list = fixed_command.split(' ')
@@ -21,6 +26,7 @@ def creation_parse(command_to_parse):
     return command_list
 
 
+# parse function for the manipulation commands
 def manipulation_parse(command_to_parse):
     fixed_command = " ".join(command_to_parse.command.split())
     command_list = fixed_command.split(' ')
@@ -34,6 +40,7 @@ def manipulation_parse(command_to_parse):
     return command_list
 
 
+# parse function for the management commands
 def management_parse(command_to_parse):
     fixed_command = " ".join(command_to_parse.command.split())
     command_list = fixed_command.split(' ')
@@ -42,6 +49,7 @@ def management_parse(command_to_parse):
     return command_list
 
 
+# parse function for the analysis commands
 def analysis_parse(command_to_parse):
     fixed_command = " ".join(command_to_parse.command.split())
     command_list = fixed_command.split(' ')
@@ -57,6 +65,7 @@ def analysis_parse(command_to_parse):
     return command_list
 
 
+# parse function for the batch commands
 def batch_parse(command_to_parse):
     fixed_command = " ".join(command_to_parse.command.split())
     command_list = fixed_command.split(' ')

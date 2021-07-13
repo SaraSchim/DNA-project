@@ -1,6 +1,7 @@
 from DNA_project.database import DataBase
 
 
+# saves the batch's list of commands in a file
 class BatchSave:
     database = DataBase()
 

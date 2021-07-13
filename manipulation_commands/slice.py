@@ -3,10 +3,11 @@ from DNA_project.database import DataBase
 from DNA_project.find_new_name import find_new_name
 
 
+# slices the seq from index to index
 class Slice:
     database = DataBase()
 
-    # data = [<seq> <from_ind> <to_ind> @<new_seq_name>|@@|None]
+    # data = [<seq>, <from_ind>, <to_ind>, @<new_seq_name>|@@|None]
     def __init__(self, data):
         if len(data) != 4:
             raise Exception("invalid number of arguments")

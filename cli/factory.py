@@ -5,6 +5,8 @@ from DNA_project.management_commands.management_factory import Management
 from DNA_project.manipulation_commands.manipulation_factory import Manipulation
 
 
+# this factory creates command object according to the first word of tne command
+# it is a singleton class because there is no need of more than one object of the class
 class Factory:
     __instance = None
 
@@ -14,7 +16,7 @@ class Factory:
         return Factory.__instance
 
     def __init__(self):
-        """Factory Method"""
+        # every group of commands has a factory class of its type
         self.command_type = {
             "new": Creation,
             "load": Creation,
@@ -34,6 +36,7 @@ class Factory:
             "batchload": BatchFactory,
         }
 
+    # gets a command and creates an object according to the dictionary
     def execute_command(self, command):
         command_list = command.split(' ')
         if command_list[0] not in self.command_type.keys():

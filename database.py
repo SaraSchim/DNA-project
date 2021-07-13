@@ -1,3 +1,7 @@
+
+# this class is a singleton class
+# it saves all DNA objects and batch commands
+# it has a dictionaries that saves the DNAs by name, by ID and a dictionary for the commands
 class DataBase(object):
     __instance = None
 

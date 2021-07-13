@@ -1,6 +1,7 @@
 from DNA_project.database import DataBase
 
 
+# saves the seq into a file
 class Save:
     database = DataBase()
 

@@ -3,9 +3,11 @@ from DNA_project.database import DataBase
 from DNA_project.find_new_name import find_new_name
 
 
+# duplicates a sequence
 class Dup:
     database = DataBase()
 
+    # data = [ <seq>, [@<new_seq_name>] ]
     def __init__(self, data):
         self.seq_name = Dup.database.get_name_by_name_or_id(data[0])
         if not Dup.database.does_name_exist(self.seq_name):

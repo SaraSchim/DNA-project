@@ -1,6 +1,7 @@
 from DNA_project.database import DataBase
 
 
+# finds a sub-sequence within a sequence.
 class Find:
 
     # data = [<seq_to_find_in>, <seq_to_be_found>]

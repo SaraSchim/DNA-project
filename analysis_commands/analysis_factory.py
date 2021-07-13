@@ -5,6 +5,7 @@ from DNA_project.analysis_commands.len import Len
 from DNA_project.parse_strategy import Parse, analysis_parse
 
 
+# a factory class for Analysis commands
 class Analysis:
     def __init__(self, command):
         self.command = command

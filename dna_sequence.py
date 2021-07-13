@@ -1,3 +1,5 @@
+# DNA objects
+# has a name, id and sequence
 class DnaSequence:
     __ids = 1
 

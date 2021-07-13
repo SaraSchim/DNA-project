@@ -1,3 +1,4 @@
+# prints the length of the seq
 class Len:
 
     def __init__(self, data):

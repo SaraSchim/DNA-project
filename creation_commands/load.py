@@ -1,7 +1,10 @@
 from DNA_project.creation_commands.new import New
 
 
+# loads a sequence from a file and saves it
 class Load:
+
+    # data = [<file_name>, [@<sequence_name>]]
     def __init__(self, data):
         self.file_name = data[0]
         self.seq_name = data[1]
