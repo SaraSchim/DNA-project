@@ -24,26 +24,35 @@ The commands are detailed in the following sections.
 *** For the full requirements description see "DNA Analyzer Project - Requirements.pdf" ***
 
 Design patterns:
+
 •	Factory – the main factory creates an object of a command type factory according to the command’s type
 each command type factory creates the object of the specific command
+
 •	Strategy – the parse class is a strategy class and gets a parse function according to the command type
+
 •	Singleton – the database of all the sequences is a singleton class
+
 Commands:
+
 •	Creation commands:
 -	New
 -	Load
 -	Dup
+
 •	Manipulation commands:
 -	Slice
 -	Concat
+
 •	Management commands:
 -	Del
 -	Save
+
 •	Analysis commands:
 -	Find
 -	FindAll
 -	Len
 -	Count
+
 •	Batch commands:
 -	batchList
 -	batchShow
