@@ -3,15 +3,15 @@ design patterns
 
 An extensive OOP project, with the goal of creating a software for manipulating DNA sequences. Designed to handle very large amounts of memory efficiently. A combination of Design Patterns and efficient data structures using Python.
 
-Requirements:
+__Requirements:
 
-DNA Analyzer System
+__DNA Analyzer System
 
-Goal:
+__Goal:
 
 The goal of the system is to load, analyze, manipulate and save DNA sequences.
 
-Description:
+__Description:
 
 DNA sequences are composed of four types of nucleotides;
 The nucleotides are marked A (Adenine), G (Guanine), C (Cytosine) and T (Thymine).
