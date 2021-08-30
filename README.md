@@ -5,7 +5,7 @@ An extensive OOP project, with the goal of creating a software for manipulating 
 
 ## Requirements:
 
-### DNA Analyzer System
+#### DNA Analyzer System
 
 ## Goal:
 
